@@ -8,9 +8,17 @@ import java.util.*;
 public class PriorityQueuePractice {
 
     public static void main(String[] args) {
+        PriorityQueue<Integer> userIds = new PriorityQueue<>();
+        userIds.offer(29);
+        userIds.offer(202);
+        userIds.offer(22);
+        userIds.offer(1022);
+        userIds.offer(5);
+        System.out.println("priority queue : "+userIds);
+
         //Queue<String> fruitsQueue = new PriorityQueue<>(String::compareToIgnoreCase);
         //or
-        PriorityQueue<String> fruitsQueue = new PriorityQueue<>((type1, type2) -> type2.compareToIgnoreCase(type1));
+        Queue<String> fruitsQueue = new PriorityQueue<>((type1, type2) -> type2.compareToIgnoreCase(type1));
         fruitsQueue.offer("Mango");
         fruitsQueue.offer("Strawberry");
         fruitsQueue.offer("Apple");
