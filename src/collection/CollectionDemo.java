@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+//parallel sort works after 8192 element else default search quick sort
 public class CollectionDemo {
     public static void main(String[] args) {
 
