@@ -1,8 +1,8 @@
-package patterns;
+package design_pattern;
 
 public class SingletonExample {
 
-    public static  volatile  SingletonExample singletonExample = null;
+    private static  volatile  SingletonExample singletonExample = null;
 
     private SingletonExample() {
         System.out.println("SingletonExample Constructor");

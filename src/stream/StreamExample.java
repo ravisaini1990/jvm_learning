@@ -1,4 +1,4 @@
-package exampleStream;
+package stream;
 
 import java.util.*;
 
@@ -25,13 +25,13 @@ public class StreamExample {
         //Method Referencing instead of i -> Sop(i)
         filteredList.forEach(System.out::println);
 
-        List<exampleStream.Employee> employeeList = new ArrayList<Employee>();
-        employeeList.add(new exampleStream.Employee(23, "Sanjeev", 25000));
-        employeeList.add(new exampleStream.Employee(33, "Rajeev", 22000));
-        employeeList.add(new exampleStream.Employee(43, "Kan", 15000));
-        employeeList.add(new exampleStream.Employee(32, "Chin", 55000));
+        List<stream.Employee> employeeList = new ArrayList<Employee>();
+        employeeList.add(new stream.Employee(23, "Sanjeev", 25000));
+        employeeList.add(new stream.Employee(33, "Rajeev", 22000));
+        employeeList.add(new stream.Employee(43, "Kan", 15000));
+        employeeList.add(new stream.Employee(32, "Chin", 55000));
 
-        List<exampleStream.Employee> finalList =  employeeList.stream().sorted().toList();
+        List<stream.Employee> finalList =  employeeList.stream().sorted().toList();
         System.out.println(finalList);
 
         List<String> names2 = Arrays.asList("peter", null, "anna", "mike", "xenia");
