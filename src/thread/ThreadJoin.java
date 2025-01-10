@@ -12,6 +12,7 @@ public class ThreadJoin {
         } , "Thread1");
 
         t1.start();
+        t1.setPriority(Thread.MAX_PRIORITY);
 
         try {
             t1.join();
