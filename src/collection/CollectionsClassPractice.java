@@ -31,6 +31,8 @@ public class  CollectionsClassPractice {
 
         Collections.sort(users);
 
+        System.out.println("Frequency of element > "+ Collections.frequency(users, new User("Abdul 9", 11)));
+
         System.out.println("User Sorted"+ users);
 
         users.sort((o1, o2) -> o2.userName.compareTo(o1.userName));
